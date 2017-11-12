@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Back to the Future Gifs!</title>
+</head>
+
+<body>
+    <!--Site Logo-->
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="flex-container">
+                <img class="center-block" src="./images/bttfLogo.png" alt="bttf-logo">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Giphy Selection box -->
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="container">
+                <form id="doneso">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search your own Back to The Future giphys here!" style="text-align: center" id="inputText">
+                        <!--<span id="inputText"></span>-->
+                    </div>
+                    <input type="submit" class="center-block btn btn-default" id="searchbtn" value="Submit">
+                </form>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </div>
+    <br>
+    <!--All our buttons will go in this flex container-->
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="container">
+                <form>
+                    <div class="panel panel-default btnHolder">
+                        <div class="panel-body" id="btnPlaceholder" style="text-align: center">
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--All of our searched Gif's will go here-->
+    <div class="row ">
+        <div class="col-xs-12">
+            <div class="container">
+                <div class="panel panel-default sResults">
+                    <div class="panel-body " id="searchResults">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+    <script src="brains.js"></script>
+</body>
+
+
+
+</html>

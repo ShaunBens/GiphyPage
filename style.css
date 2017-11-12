@@ -1,0 +1,39 @@
+body {
+    background-image: url("./images/imageBG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    /*height: 1200px;*/
+    background-attachment: fixed;
+
+}
+
+p {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+.giphDiv {
+    /* making the images go in one line rather than block & adding spacing between the images*/
+    float: left;
+    margin: 3px;
+}
+
+.sResults {
+    background-color: inherit;
+    border-color: black;
+}
+
+.newGifs {
+    margin-left: 1%;
+    margin-right: 3%;
+}
+
+.btnHolder {
+    background-color: inherit;
+    border-width: 2px;
+    border-color: black;
+}
