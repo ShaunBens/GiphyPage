@@ -71,9 +71,9 @@ $(function() { //document ready fnction
                 var gifImage = $("<img>");
                 gifImage.addClass("newGif");
                 gifImage.attr("src", results[i].images.fixed_height_still.url);
-                gifImage.attr("data-still", imgURL);
+                gifImage.attr("data-still", results[i].images.fixed_height_still.url);
                 gifImage.attr("data-animate", imgURL);
-                gifImage.attr("data-state", imgURL);
+                gifImage.attr("data-state", "still");
 
 
                 // prepending the gif
@@ -125,10 +125,12 @@ $(function() { //document ready fnction
     $(document).on("click", ".newGif", function() {
         var state = $(this).attr("data-state");
         if (state === "still") {
+            console.log("switch to annimate");
             $(this).attr("src", $(this).attr("data-animate"));
             $(this).attr("data-state", "animate");
         }
         else {
+            console.log("switch to still");
             $(this).attr("src", $(this).attr("data-still"));
             $(this).attr("data-state", "still");
         }
@@ -136,11 +138,6 @@ $(function() { //document ready fnction
 
     // Calling the renderButtons function at least once to display the initial list of gif buttons
     renderButtons();
-
-
-
-
-
 
 
 });
